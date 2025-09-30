@@ -1,0 +1,84 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html, #root {
+  height: 100%;
+  width: 100%;
+  background: #fff
+  color: #fff;
+}
+
+/* Navbar styling */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffdd57;
+  transform: scale(1.1);
+}
+
+/* Page container */
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: calc(100% - 80px); /* subtract navbar height */
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+}
+
+p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  line-height: 1.6;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+/* Buttons (for Login / CTA) */
+button {
+  padding: 12px 25px;
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background: #ffdd57;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #ffc107;
+  transform: scale(1.05);
+}
